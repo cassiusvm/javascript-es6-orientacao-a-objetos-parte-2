@@ -23,7 +23,7 @@ class NegociacoesView extends View {
             <tfoot>
                 <td colspan="3"></td>
                 <td>
-                    ${model.negociacoes.reduce((total, n) => total += n.volume, 0.0).toFixed(2)}
+                    ${model.volumeTotal.toFixed(2)}
                 </td>
             </tfoot>
         </table>
